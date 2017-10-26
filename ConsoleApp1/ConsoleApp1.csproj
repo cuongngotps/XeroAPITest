@@ -62,13 +62,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="Xero.Api, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xero.API.SDK.2.2.1.7\lib\net40\Xero.Api.dll</HintPath>
+      <HintPath>..\packages\Xero.API.SDK.Minimal.2.2.1.7\lib\net40\Xero.Api.dll</HintPath>
     </Reference>
     <Reference Include="Xero.Api.Example.Applications, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xero.API.SDK.2.2.1.7\lib\net40\Xero.Api.Example.Applications.dll</HintPath>
-    </Reference>
-    <Reference Include="Xero.Api.Example.TokenStores, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Xero.API.SDK.2.2.1.7\lib\net40\Xero.Api.Example.TokenStores.dll</HintPath>
+      <HintPath>..\packages\Xero.API.SDK.Minimal.2.2.1.7\lib\net40\Xero.Api.Example.Applications.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -77,7 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.2\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net46\System.Data.SQLite.Core.targets')" />
